@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilifi Shoe Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        header nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            min-width: 200px;
+        }
+
+        header nav ul li ul li a {
+            padding: 10px 20px;
+        }
+
+        header nav ul li:hover ul {
+            display: block;
+        }
+
+        .welcome-note {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .products img {
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .products img:hover {
+            transform: scale(1.1);
+        }
+
+        .products .product {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            header nav ul li a {
+                padding: 10px;
+                border-top: 1px solid #444;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="d:\web dev\shoe4.jfif">
+            <img src="d:\web dev\shoe4.jfif" alt="d:\web dev\shoe4.jfif">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Welcome Home where your shoes introduces you">
+        <h1>We care for your Feet</h1>
+        <p>Your shoe game is our goal.</p>
+    </div>
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a leading provider of quality products, committed to delivering the best service to our customers.</p>
+    </section>
+    <section id="products" class="section products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="d:\web dev\shoe1.jfif" alt="Shoe 1">
+            <p>Product 1 - shs350</p>
+            <button>Select Item</button>
+        </div>
+        <div class="product">
+            <img src="d:\web dev\shoe2.jfif" alt="Shoe 2">
+            <p>Product 2 - shs460</p>
+            <button>Select Item</button>
+        </div>
+        <div class="product">
+            <img src="d:\web dev\shoe5.jfif" alt="Shoe 3">
+            <p>Product 3 - Shs500</p>
+            <button>Select Item</button>
+        </div>
+    </section>
+    <section id="contact" class="section contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 My Business | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
